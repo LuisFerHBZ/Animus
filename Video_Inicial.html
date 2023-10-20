@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/StyleVideo.css" rel="stylesheet" type="text/css">
+    <title>Video con Redirección Automática</title>
+</head>
+<body>
+    <div id="videoContainer">
+    <video id="videoPlayer" width="1080" height="720" autoplay muted>
+        <source src="Archivos/Videos/Abstergo_Logo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('videoPlayer');
+            
+            // Función para redirigir a la página de inicio cuando el video termine
+            function redirectToInicio() {
+                window.location.href = 'Inicio_Animus.html'; // Cambia 'inicio.html' a tu URL de inicio
+            }
+
+            // Evento para detectar cuando el video termina
+            video.addEventListener('ended', redirectToInicio);
+        });
+    </script>
+</body>
+</html>

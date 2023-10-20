@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animus</title>
+    <link href="Styles/Style.css" rel="stylesheet">
+    <!--Direccion de Fuente Bold-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+
+    <!--Direccion de Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!--Linea de JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--Codificacion de Nvbar con resposivo en bootsrap-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid cointainer">
+          <a class="navbar-brand" href="#">
+            <img src="Archivos/Imagens/cropped-new-header-abstergo-3-03.png" alt="lOGO" width="200">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Base de Datos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Asesinos.html">Lista de Asssesinos</a></li>
+                  <li><a class="dropdown-item" href="Los_Ocultos.html">La Orden de los Ocultos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Asesinos_SC.html">Asesinos sin el Credo</a></li>
+                  <li><a class="dropdown-item" href="Templarios.html">Templarios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Artefactos_Eden.html">Artefactos del Eden</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Presentacion_Error.html">Iniciacion</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!--Agregar Tema de Fondo-->
+              <br><audio autoplay controls loop src="Archivos/Themes/Theme-Inicio.mp3" type="audio/mp3"></audio>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      
+        
+    <H1>Bienvenido al Animus</H1>
+
+    <!--Creacion del Carrusel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Archivos/Imagens/Slider/1.jpg" class="d-block w-100" alt="A1">
+          </div>
+          <div class="carousel-item">
+            <img src="Archivos/Imagens/Slider/2.jpg" class="d-block w-100" alt="A2">
+          </div>
+          <div class="carousel-item">
+            <img src="Archivos/Imagens/Slider/3.jpg" class="d-block w-100" alt="A3">
+          </div>
+          <div class="carousel-item">
+            <img src="Archivos/Imagens/Slider/4.jpg" class="d-block w-100" alt="A4">
+          </div>
+          <div class="carousel-item">
+            <img src="Archivos/Imagens/Slider/5.jpeg" class="d-block w-100" alt="A5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <center>
+    <h2>¿Qué es el Animus?</h2>
+    <a>Desarrollado por <b>Abstergo Industries</b>. El <b>Animus</b> es un dispositivo que permite a los usuarios explorar los recuerdos genéticos de sus ancestros. Para esto recabala informacion del ADN y realiza una simulacion de los eventos de su antepasado.</a><br>
+    <a>Con la finalidad de proporcionar investigaciones y experiencias inolvidables para los usuarios del Animus.</a><br>
+    </center>
+</body>
+</html>
